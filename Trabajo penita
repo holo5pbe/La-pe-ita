@@ -1,0 +1,42 @@
+package Alejandro.Rodriguez;
+
+import javax.swing.JOptionPane;
+
+public class Suma {
+
+  
+
+
+    
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[]args){
+        /*suma multiplicacion y porcentaje de productos
+        
+        */
+        String a =JOptionPane.showInputDialog(null,"Valor del primer producto"); 
+        String b =JOptionPane.showInputDialog(null,"Valor del segundo producto"); 
+        String c =JOptionPane.showInputDialog(null,"Valor del tercer producto"); 
+        String d =JOptionPane.showInputDialog(null,"Valor del cuarto producto"); 
+        String e =JOptionPane.showInputDialog(null,"Valor del quinto producto");
+        
+        double n1 = Double.parseDouble(a);
+        double n2 = Double.parseDouble(b);
+        double n3 = Double.parseDouble(c);
+        double n4 = Double.parseDouble(d);
+        double n5 = Double.parseDouble(e);
+    
+        double suma = n1 + n2 + n3 + n4 + n5;
+        double mult = n1 * n2 * n3 * n4 * n5;
+        
+        JOptionPane.showInputDialog(null, """
+                                          valor total de productos: 
+                                          la suma fue: """+suma+"\n"
+                     +"La multiplicacion de los productos fueron:"+ mult+"\n" );
+        
+    }
+    
+    
+    
+}
